@@ -7,7 +7,7 @@ using R5T.T0179;
 namespace R5T.T0180
 {
     /// <summary>
-    /// The strong-type for all file names.
+    /// Strongly-types a string as a file name.
     /// </summary>
     [StrongTypeMarker]
     public interface IFileName : ITyped<string>, IStrongTypeMarker

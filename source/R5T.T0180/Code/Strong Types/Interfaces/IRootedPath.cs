@@ -6,11 +6,11 @@ using R5T.T0178;
 namespace R5T.T0180
 {
     /// <summary>
-    /// The strong-type for all rooted paths.
+    /// Strongly-types a string as a rooted path, which could could be either a file (<see cref="IRootedFilePath"/>) or directory (<see cref="IRootedDirectoryPath"/>).
     /// </summary>
     [StrongTypeMarker]
     public interface IRootedPath : IStrongTypeMarker,
-        IPath
+        N000.IPath
     {
     }
 }

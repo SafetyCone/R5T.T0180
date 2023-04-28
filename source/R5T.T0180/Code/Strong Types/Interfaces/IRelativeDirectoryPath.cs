@@ -10,7 +10,7 @@ namespace R5T.T0180
     /// </summary>
     [StrongTypeMarker]
     public interface IRelativeDirectoryPath : IStrongTypeMarker,
-        IDirectoryPath,
+        N000.IDirectoryPath,
         IRelativePath
     {
     }

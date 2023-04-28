@@ -6,11 +6,12 @@ using R5T.T0178;
 namespace R5T.T0180
 {
     /// <summary>
-    /// The strong-type for all rooted paths.
+    /// Strongly-types a string as a rooted directory path.
+    /// (For relative directory paths, see <see cref="IRelativeDirectoryPath"/>.)
     /// </summary>
     [StrongTypeMarker]
     public interface IRootedDirectoryPath : IStrongTypeMarker,
-        IDirectoryPath,
+        N000.IDirectoryPath,
         IRootedPath
     {
     }
