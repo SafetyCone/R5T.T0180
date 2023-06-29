@@ -12,7 +12,7 @@ namespace R5T.T0180
     [StrongTypeMarker]
     public interface IRootedDirectoryPath : IStrongTypeMarker,
         N000.IDirectoryPath,
-        IRootedPath
+        IPath
     {
     }
 }
