@@ -10,7 +10,8 @@ namespace R5T.T0180
     /// The strong-type for directory paths.
     /// </summary>
     [StrongTypeMarker]
-    public interface IDirectoryName : ITyped<string>, IStrongTypeMarker
+    public interface IDirectoryName : IStrongTypeMarker,
+        ITyped<string>
     {
     }
 }
