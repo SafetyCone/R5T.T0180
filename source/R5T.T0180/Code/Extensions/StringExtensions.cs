@@ -5,81 +5,81 @@ namespace R5T.T0180.Extensions
 {
     public static class StringExtensions
     {
-        public static DirectoryName ToDirectoryName(this string value)
+        public static IDirectoryName ToDirectoryName(this string value)
         {
-            return Instances.StringOperator.ToDirectoryName(value);
+            return Instances.StringOperator_Extensions.ToDirectoryName(value);
         }
 
-        public static DirectoryPath ToDirectoryPath(this string value)
+        public static IDirectoryPath ToDirectoryPath(this string value)
         {
-            var output = Instances.StringOperator.ToDirectoryPath(value);
+            var output = Instances.StringOperator_Extensions.ToDirectoryPath(value);
             return output;
         }
 
-        public static FileExtension ToFileExtension(this string value)
+        public static IFileExtension ToFileExtension(this string value)
         {
-            var output = Instances.StringOperator.ToFileExtension(value);
+            var output = Instances.StringOperator_Extensions.ToFileExtension(value);
             return output;
         }
 
-        public static FileName ToFileName(this string value)
+        public static IFileName ToFileName(this string value)
         {
-            var output = Instances.StringOperator.ToFileName(value);
+            var output = Instances.StringOperator_Extensions.ToFileName(value);
             return output;
         }
 
-        public static FileNameStem ToFileNameStem(this string value)
+        public static IFileNameStem ToFileNameStem(this string value)
         {
-            var output = Instances.StringOperator.ToFileNameStem(value);
+            var output = Instances.StringOperator_Extensions.ToFileNameStem(value);
             return output;
         }
 
-        public static FilePath ToFilePath(this string value)
+        public static IFilePath ToFilePath(this string value)
         {
-            var output = Instances.StringOperator.ToFilePath(value);
+            var output = Instances.StringOperator_Extensions.ToFilePath(value);
             return output;
         }
 
-        public static Path ToPath(this string value)
+        public static IPath ToPath(this string value)
         {
-            var output = Instances.StringOperator.ToPath(value);
+            var output = Instances.StringOperator_Extensions.ToPath(value);
             return output;
         }
 
-        public static RelativeDirectoryPath ToRelativeDirectoryPath(this string value)
+        public static IRelativeDirectoryPath ToRelativeDirectoryPath(this string value)
         {
-            var output = Instances.StringOperator.ToRelativeDirectoryPath(value);
+            var output = Instances.StringOperator_Extensions.ToRelativeDirectoryPath(value);
             return output;
         }
 
         /// <inheritdoc cref="IStringOperator.ToRelativeFilePath(string)"/>
-        public static RelativeFilePath ToRelativeFilePath(this string value)
+        public static IRelativeFilePath ToRelativeFilePath(this string value)
         {
-            var output = Instances.StringOperator.ToRelativeFilePath(value);
+            var output = Instances.StringOperator_Extensions.ToRelativeFilePath(value);
             return output;
         }
 
-        public static RelativePath ToRelativePath(this string value)
+        public static IRelativePath ToRelativePath(this string value)
         {
-            var output = Instances.StringOperator.ToRelativePath(value);
+            var output = Instances.StringOperator_Extensions.ToRelativePath(value);
             return output;
         }
 
-        public static RootedDirectoryPath ToRootedDirectoryPath(this string value)
+        public static IRootedDirectoryPath ToRootedDirectoryPath(this string value)
         {
-            var output = Instances.StringOperator.ToRootedDirectoryPath(value);
+            var output = Instances.StringOperator_Extensions.ToRootedDirectoryPath(value);
             return output;
         }
 
-        public static RootedFilePath ToRootedFilePath(this string value)
+        public static IRootedFilePath ToRootedFilePath(this string value)
         {
-            var output = Instances.StringOperator.ToRootedFilePath(value);
+            var output = Instances.StringOperator_Extensions.ToRootedFilePath(value);
             return output;
         }
 
-        public static RootedPath ToRootedPath(this string value)
+        public static IRootedPath ToRootedPath(this string value)
         {
-            var output = Instances.StringOperator.ToRootedPath(value);
+            var output = Instances.StringOperator_Extensions.ToRootedPath(value);
             return output;
         }
     }

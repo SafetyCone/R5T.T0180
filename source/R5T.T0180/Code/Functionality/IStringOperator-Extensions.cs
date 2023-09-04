@@ -3,85 +3,85 @@ using System;
 using R5T.T0132;
 
 
-namespace R5T.T0180
+namespace R5T.T0180.Extensions
 {
     [FunctionalityMarker]
     public partial interface IStringOperator : IFunctionalityMarker
     {
-        public DirectoryName ToDirectoryName(string value)
+        public IDirectoryName ToDirectoryName(string value)
         {
             var output = new DirectoryName(value);
             return output;
         }
 
-        public DirectoryPath ToDirectoryPath(string value)
+        public IDirectoryPath ToDirectoryPath(string value)
         {
             var output = new DirectoryPath(value);
             return output;
         }
 
-        public FileExtension ToFileExtension(string value)
+        public IFileExtension ToFileExtension(string value)
         {
             var output = new FileExtension(value);
             return output;
         }
 
-        public FileName ToFileName(string value)
+        public IFileName ToFileName(string value)
         {
             var output = new FileName(value);
             return output;
         }
 
-        public FileNameStem ToFileNameStem(string value)
+        public IFileNameStem ToFileNameStem(string value)
         {
             var output = new FileNameStem(value);
             return output;
         }
 
-        public FilePath ToFilePath(string value)
+        public IFilePath ToFilePath(string value)
         {
             var output = new FilePath(value);
             return output;
         }
 
-        public Path ToPath(string value)
+        public IPath ToPath(string value)
         {
             var output = new Path(value);
             return output;
         }
 
-        public RelativeDirectoryPath ToRelativeDirectoryPath(string value)
+        public IRelativeDirectoryPath ToRelativeDirectoryPath(string value)
         {
             var output = new RelativeDirectoryPath(value);
             return output;
         }
 
         /// <inheritdoc cref="RelativeFilePath"/>
-        public RelativeFilePath ToRelativeFilePath(string value)
+        public IRelativeFilePath ToRelativeFilePath(string value)
         {
             var output = new RelativeFilePath(value);
             return output;
         }
 
-        public RelativePath ToRelativePath(string value)
+        public IRelativePath ToRelativePath(string value)
         {
             var output = new RelativePath(value);
             return output;
         }
 
-        public RootedDirectoryPath ToRootedDirectoryPath(string value)
+        public IRootedDirectoryPath ToRootedDirectoryPath(string value)
         {
             var output = new RootedDirectoryPath(value);
             return output;
         }
 
-        public RootedFilePath ToRootedFilePath(string value)
+        public IRootedFilePath ToRootedFilePath(string value)
         {
             var output = new RootedFilePath(value);
             return output;
         }
 
-        public RootedPath ToRootedPath(string value)
+        public IRootedPath ToRootedPath(string value)
         {
             var output = new RootedPath(value);
             return output;
