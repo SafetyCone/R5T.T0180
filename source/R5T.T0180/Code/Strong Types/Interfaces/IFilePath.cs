@@ -10,6 +10,9 @@ namespace R5T.T0180
     /// (Quality-of-life name for <see cref="IRootedFilePath"/>.)
     /// <para><inheritdoc cref="IRootedFilePath" path="/summary"/></para>
     /// </summary>
+    /// <remarks>
+    /// See also: R5T.T0231.IFilePath (rooted IFilePath)
+    /// </remarks>
     [StrongTypeMarker]
     public interface IFilePath : IStrongTypeMarker,
         IRootedFilePath
