@@ -16,12 +16,6 @@ namespace R5T.T0180.Extensions
             return output;
         }
 
-        public static IFileExtension ToFileExtension(this string value)
-        {
-            var output = Instances.StringOperator_Extensions.ToFileExtension(value);
-            return output;
-        }
-
         public static IFileName ToFileName(this string value)
         {
             var output = Instances.StringOperator_Extensions.ToFileName(value);

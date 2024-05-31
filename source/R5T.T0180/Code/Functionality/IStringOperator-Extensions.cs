@@ -20,12 +20,6 @@ namespace R5T.T0180.Extensions
             return output;
         }
 
-        public IFileExtension ToFileExtension(string value)
-        {
-            var output = new FileExtension(value);
-            return output;
-        }
-
         public IFileName ToFileName(string value)
         {
             var output = new FileName(value);
